@@ -6,6 +6,7 @@ using namespace std;
 string sreverse(string str)
 {
     string res = str;
+    //no buffer
     reverse(res.begin(), res.end());
     return res;
 }

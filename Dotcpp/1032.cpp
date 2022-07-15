@@ -4,8 +4,7 @@ using namespace std;
 
 string addstring(string s1, string s2)
 {
-    string res = s1 + s2;
-    return res;
+    return s1 + s2;
 }
 
 int main()
