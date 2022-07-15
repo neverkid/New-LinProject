@@ -2,9 +2,8 @@
 #include<algorithm>
 using namespace std;
 int main(){
-    int a,b,c;
-    while(cin>>a>>b>>c){
-        cout<<max(max(a,b),c);
-    }
+    int a = 12;
+    int b = 20;
+    cout<<max(a,b);
     return 0;
 }
