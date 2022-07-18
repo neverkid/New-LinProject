@@ -2,6 +2,7 @@
 #include<cmath>
 #include<iostream>
 #include <cstdlib>
+#include<ctime>
 #define matrix Matrix
 using namespace std;
 
@@ -298,6 +299,7 @@ T** arrayList(int row, int col) {
 
 template <class T>
 void arraysRandomValue(T** arr, int row, int col, T range) {
+	srand(time(NULL));
 	if (arr != nullptr) {
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < col; j++) {
