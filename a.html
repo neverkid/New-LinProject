@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr" class="client-nojs">
+<head>
+<title>cppreference.com</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.2" />
+<link rel="alternate" type="application/x-wiki" title="编辑" href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;action=edit" />
+<link rel="edit" title="编辑" href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;action=edit" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/mwiki/opensearch_desc.php" title="cppreference.com (zh)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://zh.cppreference.com/mwiki/api.php?action=rsd" />
+<link rel="alternate" hreflang="zh" href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;variant=zh" />
+<link rel="alternate" hreflang="zh-hans" href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;variant=zh-hans" />
+<link rel="alternate" hreflang="zh-hant" href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;variant=zh-hant" />
+<link rel="alternate" hreflang="zh-cn" href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;variant=zh-cn" />
+<link rel="alternate" hreflang="zh-hk" href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;variant=zh-hk" />
+<link rel="alternate" hreflang="zh-mo" href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;variant=zh-mo" />
+<link rel="alternate" hreflang="zh-my" href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;variant=zh-my" />
+<link rel="alternate" hreflang="zh-sg" href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;variant=zh-sg" />
+<link rel="alternate" hreflang="zh-tw" href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;variant=zh-tw" />
+<link rel="alternate" type="application/atom+xml" title="cppreference.com的Atom" href="/mwiki/index.php?title=Special:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom" />
+<link rel="stylesheet" href="https://zh.cppreference.com/mwiki/load.php?debug=false&amp;lang=zh-cn&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="https://zh.cppreference.com/mwiki/load.php?debug=false&amp;lang=zh-cn&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_zh_:resourceloader:filter:minify-css:7:15cea3ec788a65b5187d4018eed543bf */</style>
+
+<script src="https://zh.cppreference.com/mwiki/load.php?debug=false&amp;lang=zh-cn&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"首页","wgTitle":"首页","wgCurRevisionId":74449,"wgArticleId":913,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"zh","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgMonthNamesShort":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRelevantPageName":"首页","wgUserVariant":"zh-cn","wgRestrictionEdit":[],"wgRestrictionMove":[],"wgIsMainPage":true});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"zh-cn","language":"zh-cn","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-MathJax":1,"gadget-ColiruCompiler":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_zh_:resourceloader:filter:minify-js:7:11dae28e95a5241c02ea721023eaa74c */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-首页 skin-cppreference2 action-view">
+        <!-- header -->
+        <div id="mw-head" class="noprint">
+            <div id="cpp-head-first-base">
+                <div id="cpp-head-first">
+                    <h5><a href="/">
+                        cppreference.com                        </a></h5>
+                    <div id="cpp-head-search">
+                        
+<!-- 0 -->
+<div id="p-search">
+<form action="https://duckduckgo.com/" method="get">
+  <input type="hidden" name="sites" value="cppreference.com">
+  <input type="search" name="q">
+  <input type="submit" value="Search">
+</form>
+</div>
+
+<!-- /0 -->
+                    </div>
+                    <div id="cpp-head-personal">
+                        
+<!-- 0 -->
+<div id="p-personal" class="">
+<span id="pt-createaccount"><a href="/mwiki/index.php?title=Special:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;returnto=%E9%A6%96%E9%A1%B5&amp;type=signup">创建账户</a></span>	<div class="menu">
+        <ul lang="zh-CN" dir="ltr">
+<li id="pt-login"><a href="/mwiki/index.php?title=Special:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;returnto=%E9%A6%96%E9%A1%B5" title="我们鼓励你登录，不过这不是强制的 [o]" accesskey="o">登录</a></li>        </ul>
+    </div>
+</div>
+
+<!-- /0 -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cpp-head-second-base">
+                <div id="cpp-head-second">
+                    <div id="cpp-head-tools-left">
+                        
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>名字空间</h5>
+	<ul lang="zh-CN" dir="ltr">
+					<li  id="ca-nstab-main" class="selected"><span><a href="/w/%E9%A6%96%E9%A1%B5"  title="查看内容页面 [c]" accesskey="c">页面</a></span></li>
+					<li  id="ca-talk"><span><a href="/w/Talk:%E9%A6%96%E9%A1%B5"  title="有关内容页面的讨论 [t]" accesskey="t">讨论</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu">
+		<h5><span>变换</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul lang="zh-CN" dir="ltr">
+							<li id="ca-varlang-0"><a href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;variant=zh" >不转换</a></li>
+							<li id="ca-varlang-1"><a href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;variant=zh-hans" >简体</a></li>
+							<li id="ca-varlang-2"><a href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;variant=zh-hant" >繁體</a></li>
+							<li id="ca-varlang-3" class="selected"><a href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;variant=zh-cn" >大陆简体</a></li>
+							<li id="ca-varlang-4"><a href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;variant=zh-hk" >香港繁體</a></li>
+							<li id="ca-varlang-5"><a href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;variant=zh-mo" >澳門繁體</a></li>
+							<li id="ca-varlang-6"><a href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;variant=zh-my" >大马简体</a></li>
+							<li id="ca-varlang-7"><a href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;variant=zh-sg" >新加坡简体</a></li>
+							<li id="ca-varlang-8"><a href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;variant=zh-tw" >台灣正體</a></li>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                    <div id="cpp-head-tools-right">
+                        
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>查看</h5>
+	<ul lang="zh-CN" dir="ltr">
+					<li id="ca-view" class="selected"><span><a href="/w/%E9%A6%96%E9%A1%B5" >查看</a></span></li>
+					<li id="ca-edit"><span><a href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;action=edit"  title="你可以编辑本页面。请在保存前使用预览按钮。 [e]" accesskey="e">编辑</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;action=history"  title="本页面过去的版本 [h]" accesskey="h">历史</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>操作</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul lang="zh-CN" dir="ltr">
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;" lang="zh-CN" dir="ltr"></div>
+                                <!-- firstHeading -->
+<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYITK7M&placement=cppreferencecom" id="_carbonads_js"></script>
+                <h1 id="firstHeading" class="firstHeading">C 和 C++ 参考手册</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">来自cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub" lang="zh-CN" dir="ltr"></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="zh-CN" dir="ltr" class="mw-content-ltr"><table class="plainlinks fmbox fmbox-system noprint" style="background: #efe;">
+<tr>
+<td class="mbox-image">
+  <img alt="" src="https://upload.cppreference.com/mwiki/images/3/31/Imbox_notice.png" width="40" height="40" /></td>
+<td class="mbox-text" style=""> <a rel="nofollow" class="external text" href="http://cppcon.org"><b>CppCon 2022</b></a>  <br />
+此乃整个 C++ 社区每年一度、为期一周的聚会。<a rel="nofollow" class="external text" href="http://cppcon.org/registration">即刻注册！</a> </td>
+
+</tr>
+</table>
+<p><br />
+</p>
+<table class="mainpagetable" cellspacing="0" style="width:100%; white-space:nowrap;">
+
+<tr class="row rowtop">
+<td colspan="3">
+<p><a href="/w/cpp" title="cpp"><span style="font-size: 2em;">C++ 参考手册</span></a><br />
+<span style="font-size: 0.8em;">C++98, C++03, <a href="/w/cpp/11" title="cpp/11">C++11</a>, <a href="/w/cpp/14" title="cpp/14">C++14</a>, <a href="/w/cpp/17" title="cpp/17">C++17</a>, <a href="/w/cpp/20" title="cpp/20">C++20</a>, <a href="/w/cpp/23" title="cpp/23">C++23</a> &#160; &#9474; &#160;
+<a href="/w/cpp/compiler_support" title="cpp/compiler support"> 编译器支持</a> <a href="/w/cpp/compiler_support/11" title="cpp/compiler support/11">C++11</a>, <a href="/w/cpp/compiler_support/14" title="cpp/compiler support/14">C++14</a>, <a href="/w/cpp/compiler_support/17" title="cpp/compiler support/17">C++17</a>, <a href="/w/cpp/compiler_support/20" title="cpp/compiler support/20">C++20</a>, <a href="/w/cpp/compiler_support/23" title="cpp/compiler support/23">C++23</a><br />
+</span>
+</p>
+</td></tr>
+<tr class="row">
+<td>
+<div class="mainpagediv">
+<p><a href="/w/cpp/freestanding" title="cpp/freestanding"> 自立实现</a>
+</p>
+</div>
+<p><b><a href="/w/cpp/language" title="cpp/language"> 语言</a></b>
+</p>
+<div class="mainpagediv">
+<p><a href="/w/cpp/language/basic_concepts" title="cpp/language/basic concepts"> 基本概念</a><br />
+<a href="/w/cpp/keyword" title="cpp/keyword"> 关键词</a><br />
+<a href="/w/cpp/preprocessor" title="cpp/preprocessor"> 预处理器</a><br />
+<a href="/w/cpp/language/expressions" title="cpp/language/expressions"> 表达式</a><br />
+<a href="/w/cpp/language/declarations" title="cpp/language/declarations"> 声明</a><br />
+<a href="/w/cpp/language/initialization" title="cpp/language/initialization"> 初始化</a><br />
+<a href="/w/cpp/language/functions" title="cpp/language/functions"> 函数</a><br />
+<a href="/w/cpp/language/statements" title="cpp/language/statements"> 语句</a><br />
+<a href="/w/cpp/language/classes" title="cpp/language/classes"> 类</a><br />
+<a href="/w/cpp/language/operators" title="cpp/language/operators"> 重载</a><br />
+<a href="/w/cpp/language/templates" title="cpp/language/templates"> 模板</a><br />
+<a href="/w/cpp/language/exceptions" title="cpp/language/exceptions"> 异常</a><br />
+</p>
+</div>
+<p><b><a href="/w/cpp/header" title="cpp/header"> 头文件</a></b>
+</p><p><b><a href="/w/cpp/named_req" title="cpp/named req">具名要求</a></b>
+</p><p><b><a href="/w/cpp/feature_test" title="cpp/feature test">功能特性测试宏</a></b> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
+</p><p><b><a href="/w/cpp/utility#.E8.AF.AD.E8.A8.80.E6.94.AF.E6.8C.81" title="cpp/utility"> 语言支持库</a></b>
+</p>
+<div class="mainpagediv">
+<p><a href="/w/cpp/utility/source_location" title="cpp/utility/source location"> 源代码信息</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br />
+<a href="/w/cpp/types" title="cpp/types"> 类型支持</a><br />
+<a href="/w/cpp/utility/program" title="cpp/utility/program"> 程序工具</a><br />
+<a href="/w/cpp/coroutine" title="cpp/coroutine"> 协程支持</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br />
+<a href="/w/cpp/utility#.E4.B8.89.E8.B7.AF.E6.AF.94.E8.BE.83" title="cpp/utility"> 三路比较</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br />
+<a href="/w/cpp/types/numeric_limits" title="cpp/types/numeric limits"><tt>numeric_limits</tt></a>&#160;&#160;−&#160;&#160;<a href="/w/cpp/types/type_info" title="cpp/types/type info"><tt>type_info</tt></a><br />
+<a href="/w/cpp/utility/initializer_list" title="cpp/utility/initializer list"><tt>initializer_list</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br />
+</p>
+</div>
+<p><b><a href="/w/cpp/concepts" title="cpp/concepts"> 概念库</a></b> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
+</p><p><b><a href="/w/cpp/meta" title="cpp/meta"> 元编程库</a></b> <span class="t-mark-rev t-since-cxx11">(C++11)</span>
+</p>
+<div class="mainpagediv">
+<p><a href="/w/cpp/meta#.E7.B1.BB.E5.9E.8B.E7.89.B9.E6.80.A7" title="cpp/meta">类型特性</a>&#160;&#160;−&#160;&#160;<a href="/w/cpp/numeric/ratio" title="cpp/numeric/ratio"><tt>ratio</tt></a><br />
+<a href="/w/cpp/utility/integer_sequence" title="cpp/utility/integer sequence"><tt>integer_sequence</tt></a> <span class="t-mark-rev t-since-cxx14">(C++14)</span>
+</p>
+</div>
+</td>
+<td>
+<p><b><a href="/w/cpp/error" title="cpp/error"> 诊断库</a></b>
+</p>
+<div class="mainpagediv">
+<p><a href="/w/cpp/utility/basic_stacktrace" title="cpp/utility/basic stacktrace"><tt>basic_stacktrace</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+</p>
+</div>
+<p><b><a href="/w/cpp/memory" title="cpp/memory"> 内存管理库</a></b>
+</p>
+<div class="mainpagediv">
+<p><a href="/w/cpp/memory/unique_ptr" title="cpp/memory/unique ptr"><tt>unique_ptr</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br />
+<a href="/w/cpp/memory/shared_ptr" title="cpp/memory/shared ptr"><tt>shared_ptr</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span>
+</p>
+</div>
+<p><b><a href="/w/cpp/utility#.E9.80.9A.E7.94.A8.E5.B7.A5.E5.85.B7" title="cpp/utility"> 通用工具库</a></b>
+</p>
+<div class="mainpagediv">
+<p><a href="/w/cpp/utility/functional" title="cpp/utility/functional"> 函数对象</a>&#160;&#160;−&#160;&#160;<a href="/w/cpp/utility/hash" title="cpp/utility/hash"><tt>hash</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br />
+<a href="/w/cpp/utility#swap_.E4.B8.8E.E7.B1.BB.E5.9E.8B.E8.BF.90.E7.AE.97" title="cpp/utility"> 工具函数</a><br />
+<a href="/w/cpp/utility/pair" title="cpp/utility/pair"><tt>pair</tt></a>&#160;&#160;−&#160;&#160;
+<a href="/w/cpp/utility/tuple" title="cpp/utility/tuple"><tt>tuple</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br />
+<a href="/w/cpp/utility/optional" title="cpp/utility/optional"><tt>optional</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span>&#160;&#160;−&#160;&#160;<a href="/w/cpp/utility/any" title="cpp/utility/any"><tt>any</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span><br />
+<a href="/w/cpp/utility/variant" title="cpp/utility/variant"><tt>variant</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span><br />
+<a href="/w/cpp/utility#.E5.88.9D.E7.AD.89.E5.AD.97.E7.AC.A6.E4.B8.B2.E8.BD.AC.E6.8D.A2" title="cpp/utility"> 字符串转换</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span><br />
+<a href="/w/cpp/utility/format" title="cpp/utility/format"> 格式化</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br />
+<a href="/w/cpp/numeric#.E4.BD.8D.E6.93.8D.E7.BA.B5_.28C.2B.2B20_.E8.B5.B7.29" title="cpp/numeric"> 位操纵</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
+</p>
+</div>
+<p><b><a href="/w/cpp/string" title="cpp/string"> 字符串库</a></b>
+</p>
+<div class="mainpagediv">
+<p><a href="/w/cpp/string/basic_string" title="cpp/string/basic string"><tt>basic_string</tt></a><br />
+<a href="/w/cpp/string/basic_string_view" title="cpp/string/basic string view"><tt>basic_string_view</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span><br />
+以空字符结尾的字符串：<br />
+&#160;&#160;<a href="/w/cpp/string/byte" title="cpp/string/byte"> 字节</a>&#160;&#160;−&#160;&#160;<a href="/w/cpp/string/multibyte" title="cpp/string/multibyte"> 多字节</a>&#160;&#160;−&#160;&#160;<a href="/w/cpp/string/wide" title="cpp/string/wide"> 宽</a>
+</p>
+</div>
+<p><b><a href="/w/cpp/container" title="cpp/container"> 容器库</a></b>
+</p>
+<div class="mainpagediv">
+<p><a href="/w/cpp/container/array" title="cpp/container/array"><tt>array</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span>&#160;&#160;−&#160;&#160;<a href="/w/cpp/container/vector" title="cpp/container/vector"><tt>vector</tt></a>&#160;&#160;−&#160;&#160;<a href="/w/cpp/container/deque" title="cpp/container/deque"><tt>deque</tt></a><br />
+<a href="/w/cpp/container/list" title="cpp/container/list"><tt>list</tt></a>&#160;&#160;−&#160;&#160;<a href="/w/cpp/container/forward_list" title="cpp/container/forward list"><tt>forward_list</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br />
+<a href="/w/cpp/container/map" title="cpp/container/map"><tt>map</tt></a>&#160;&#160;−&#160;&#160;<a href="/w/cpp/container/multimap" title="cpp/container/multimap"><tt>multimap</tt></a><br />
+<a href="/w/cpp/container/set" title="cpp/container/set"><tt>set</tt></a>&#160;&#160;−&#160;&#160;<a href="/w/cpp/container/multiset" title="cpp/container/multiset"><tt>multiset</tt></a><br />
+<a href="/w/cpp/container/unordered_map" title="cpp/container/unordered map"><tt>unordered_map</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br /><a href="/w/cpp/container/unordered_multimap" title="cpp/container/unordered multimap"><tt>unordered_multimap</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br />
+<a href="/w/cpp/container/unordered_set" title="cpp/container/unordered set"><tt>unordered_set</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br /><a href="/w/cpp/container/unordered_multiset" title="cpp/container/unordered multiset"><tt>unordered_multiset</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br />
+<a href="/w/cpp/container/stack" title="cpp/container/stack"><tt>stack</tt></a>&#160;&#160;−&#160;&#160;<a href="/w/cpp/container/queue" title="cpp/container/queue"><tt>queue</tt></a>&#160;&#160;−&#160;&#160;<a href="/w/cpp/container/priority_queue" title="cpp/container/priority queue"><tt>priority_queue</tt></a><br />
+<a href="/w/cpp/container/span" title="cpp/container/span"><tt>span</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
+</p>
+</td>
+<td>
+<p><b><a href="/w/cpp/iterator" title="cpp/iterator"> 迭代器库</a></b>
+</p><p><b><a href="/w/cpp/ranges" title="cpp/ranges"> 范围库</a></b> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
+</p><p><b><a href="/w/cpp/algorithm" title="cpp/algorithm"> 算法库</a></b>
+</p>
+<div class="mainpagediv">
+<p><a href="/w/cpp/algorithm/ranges" title="cpp/algorithm/ranges"> 受约束算法</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
+</p>
+</div>
+<p><b><a href="/w/cpp/numeric" title="cpp/numeric"> 数值库</a></b>
+</p>
+<div class="mainpagediv">
+<p><a href="/w/cpp/numeric/math" title="cpp/numeric/math"> 常用数学函数</a><br />
+<a href="/w/cpp/numeric/special_functions" title="cpp/numeric/special functions"> 数学特殊函数</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span><br />
+<a href="/w/cpp/numeric/constants" title="cpp/numeric/constants"> 数学常数</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br />
+<a href="/w/cpp/numeric#.E6.95.B0.E5.80.BC.E7.AE.97.E6.B3.95" title="cpp/numeric"> 数值算法</a><br />
+<a href="/w/cpp/numeric/random" title="cpp/numeric/random"> 伪随机数生成</a><br />
+<a href="/w/cpp/numeric/fenv" title="cpp/numeric/fenv"> 浮点环境</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br />
+<a href="/w/cpp/numeric/complex" title="cpp/numeric/complex"><tt>complex</tt></a>&#160;&#160;−&#160;&#160;<a href="/w/cpp/numeric/valarray" title="cpp/numeric/valarray"><tt>valarray</tt></a>
+</p>
+</div>
+<p><b><a href="/w/cpp/chrono" title="cpp/chrono"> 日期时间库</a></b>
+</p><p><b><a href="/w/cpp/locale" title="cpp/locale"> 本地化库</a></b>
+</p><p><b><a href="/w/cpp/io" title="cpp/io"> 输入/输出库</a></b>
+</p>
+<div class="mainpagediv">
+<p><a href="/w/cpp/io#.E5.9F.BA.E4.BA.8E.E6.B5.81.E7.9A.84_I.2FO" title="cpp/io">基于流的 I/O</a><br />
+<a href="/w/cpp/io#.E5.90.8C.E6.AD.A5.E7.9A.84.E8.BE.93.E5.87.BA" title="cpp/io"> 同步输出</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br />
+<a href="/w/cpp/io/manip" title="cpp/io/manip"> I/O 操纵符</a><br />
+</p>
+</div>
+<p><b><a href="/w/cpp/filesystem" title="cpp/filesystem"> 文件系统库</a></b> <span class="t-mark-rev t-since-cxx17">(C++17)</span>
+</p><p><b><a href="/w/cpp/regex" title="cpp/regex"> 正则表达式库</a></b> <span class="t-mark-rev t-since-cxx11">(C++11)</span>
+</p>
+<div class="mainpagediv">
+<p><a href="/w/cpp/regex/basic_regex" title="cpp/regex/basic regex"><tt>basic_regex</tt></a>&#160;&#160;−&#160;&#160;<a href="/w/cpp/regex#.E7.AE.97.E6.B3.95" title="cpp/regex">算法</a>
+</p>
+</div>
+<p><b><a href="/w/cpp/thread" title="cpp/thread"> 并发支持库</a></b> <span class="t-mark-rev t-since-cxx11">(C++11)</span>
+</p>
+<div class="mainpagediv">
+<p><a href="/w/cpp/atomic/atomic" title="cpp/atomic/atomic"><tt>atomic</tt></a>&#160;&#160;−&#160;&#160;<a href="/w/cpp/atomic/atomic_flag" title="cpp/atomic/atomic flag"><tt>atomic_flag</tt></a><br />
+<a href="/w/cpp/atomic/atomic_ref" title="cpp/atomic/atomic ref"><tt>atomic_ref</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br />
+<a href="/w/cpp/thread/thread" title="cpp/thread/thread"><tt>thread‏‎</tt></a>&#160;−&#160;<a href="/w/cpp/thread/jthread" title="cpp/thread/jthread"><tt>jthread‏‎</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br />
+<a href="/w/cpp/thread/mutex" title="cpp/thread/mutex"><tt>mutex</tt></a><br />
+<a href="/w/cpp/thread/condition_variable" title="cpp/thread/condition variable"><tt>condition_variable‏‎</tt></a><br />
+<a href="/w/cpp/thread/future" title="cpp/thread/future"><tt>future</tt></a>&#160;&#160;−&#160;&#160;<a href="/w/cpp/thread/promise" title="cpp/thread/promise"><tt>promise</tt></a>
+</p>
+</div>
+</td></tr>
+<tr class="row">
+<td colspan="3"><b><a href="/w/cpp/experimental" title="cpp/experimental"> 技术规范</a></b><br />
+<p>&#160;&#160;<b><a href="/w/cpp/experimental/lib_extensions" title="cpp/experimental/lib extensions">标准库扩展</a></b>&#160;&#160;<span class="t-mark-rev t-since-libfund-ts t-mark-ts">(库基础 TS)</span>
+</p>
+<div class="mainpagediv">
+<p><a href="/w/cpp/experimental/resource_adaptor" title="cpp/experimental/resource adaptor"><tt>resource_adaptor</tt></a> &#8212;
+<a href="/w/cpp/experimental/invocation_type" title="cpp/experimental/invocation type"><tt>invocation_type</tt></a>
+</p>
+</div>
+<p>&#160;&#160;<b><a href="/w/cpp/experimental/lib_extensions_2" title="cpp/experimental/lib extensions 2">标准库扩展 v2</a></b>&#160;&#160;<span class="t-mark-rev t-since-libfund-ts-2 t-mark-ts">(库基础 TS v2)</span>
+</p>
+<div class="mainpagediv">
+<p><a href="/w/cpp/experimental/propagate_const" title="cpp/experimental/propagate const"><tt>propagate_const</tt></a> &#8212;
+<a href="/w/cpp/experimental/ostream_joiner" title="cpp/experimental/ostream joiner"><tt>ostream_joiner</tt></a> &#8212;
+<a href="/w/cpp/experimental/randint" title="cpp/experimental/randint"><tt>randint</tt></a><br />
+<a href="/w/cpp/experimental/observer_ptr" title="cpp/experimental/observer ptr"><tt>observer_ptr</tt></a> &#8212;
+<a href="/w/cpp/experimental/is_detected" title="cpp/experimental/is detected">检测手法</a>
+</p>
+</div>
+<p>&#160;&#160;<b><a href="/w/cpp/experimental/lib_extensions_3" title="cpp/experimental/lib extensions 3">标准库扩展 v3</a></b>&#160;&#160;<span class="t-mark-rev t-since-libfund-ts-3 t-mark-ts">(库基础 TS v3)</span>
+</p>
+<div class="mainpagediv">
+<p><a href="/w/cpp/experimental/scope_exit" title="cpp/experimental/scope exit"><tt>scope_exit</tt></a> &#8212;
+<a href="/w/cpp/experimental/scope_fail" title="cpp/experimental/scope fail"><tt>scope_fail</tt></a> &#8212;
+<a href="/w/cpp/experimental/scope_success" title="cpp/experimental/scope success"><tt>scope_success</tt></a> &#8212;
+<a href="/w/cpp/experimental/unique_resource" title="cpp/experimental/unique resource"><tt>unique_resource</tt></a>
+</p>
+</div>
+<p>&#160;&#160;<b><a href="/w/cpp/experimental/concurrency" title="cpp/experimental/concurrency">并发库扩展</a></b>&#160;&#160;<span class="t-mark-rev t-since-concurrency-ts t-mark-ts">(并发 TS)</span> &#160; &#8212; &#160; <b><a href="/w/cpp/language/transactional_memory" title="cpp/language/transactional memory">事务性内存</a></b>&#160;&#160;<span class="t-mark-rev t-since-tm-ts t-mark-ts">(TM TS)</span><br />
+&#160;&#160;<b><a href="/w/cpp/experimental/reflect" title="cpp/experimental/reflect">反射</a></b>&#160;&#160;<span class="t-mark-rev t-since-reflection-ts t-mark-ts">(反射 TS)</span><br />
+</p>
+</td></tr>
+<tr class="row rowbottom">
+<td colspan="3"> <a href="/w/cpp/links" title="cpp/links">外部链接</a>&#160;&#160;−&#160;&#160;<a href="/w/cpp/links/libs" title="cpp/links/libs">非 ANSI/ISO 库</a>&#160;&#160;−&#160;&#160;<a href="/w/cpp/index" title="cpp/index">索引</a>&#160;&#160;−&#160;&#160;<a href="/w/cpp/symbol_index" title="cpp/symbol index">std 符号索引</a>
+</td></tr>
+<tr>
+<td> <span style="margin:12px;"></span>
+</td></tr>
+<tr class="row rowtop">
+<td colspan="3">
+<p><a href="/w/c" title="c"><span style="font-size: 2em;">C 参考手册</span></a><br />
+<span style="font-size: 0.8em;">C89, C95, C99, <a href="/w/c/11" title="c/11">C11</a>, <a href="/w/c/17" title="c/17">C17</a>, <a href="/w/c/23" title="c/23">C23</a></span>
+</p>
+</td></tr>
+<tr class="row">
+<td>
+<p><b><a href="/w/c/language" title="c/language"> 语言</a></b>
+</p>
+<div class="mainpagediv">
+<p><a href="/w/c/language/basic_concepts" title="c/language/basic concepts"> 基本概念</a><br />
+<a href="/w/c/keyword" title="c/keyword"> 关键词</a><br />
+<a href="/w/c/preprocessor" title="c/preprocessor"> 预处理器</a><br />
+<a href="/w/c/language/expressions" title="c/language/expressions"> 表达式</a><br />
+<a href="/w/c/language/declarations" title="c/language/declarations"> 声明</a><br />
+<a href="/w/c/language/initialization" title="c/language/initialization"> 初始化</a><br />
+<a href="/w/c/language/functions" title="c/language/functions"> 函数</a><br />
+<a href="/w/c/language/statements" title="c/language/statements"> 语句</a><br />
+</p>
+</div>
+<p><b><a href="/w/c/header" title="c/header"> 头文件</a></b>
+</p>
+</td>
+<td>
+<p><b><a href="/w/c/types" title="c/types"> 类型支持</a></b>
+</p><p><b><a href="/w/c/program" title="c/program"> 程序工具</a></b>
+</p><p><b><a href="/w/c/variadic" title="c/variadic"> 变参数函数</a></b>
+</p><p><b><a href="/w/c/error" title="c/error"> 错误处理</a></b>
+</p><p><b><a href="/w/c/memory" title="c/memory"> 动态内存管理</a></b>
+</p><p><b><a href="/w/c/string" title="c/string"> 字符串库</a></b>
+</p>
+<div class="mainpagediv">
+<p>以空字符结尾的字符串：<br />
+&#160;&#160;<a href="/w/c/string/byte" title="c/string/byte">字节</a>&#160;&#160;−&#160;&#160;<a href="/w/c/string/multibyte" title="c/string/multibyte">多字节</a>&#160;&#160;−&#160;&#160;<a href="/w/c/string/wide" title="c/string/wide">宽</a>
+</p>
+</div>
+<p><b><a href="/w/c/algorithm" title="c/algorithm"> 算法</a></b>
+</p>
+</td>
+<td>
+<p><b><a href="/w/c/numeric" title="c/numeric"> 数值</a></b>
+</p>
+<div class="mainpagediv">
+<p><a href="/w/c/numeric/math" title="c/numeric/math"> 常用数学函数</a><br />
+<a href="/w/c/numeric/fenv" title="c/numeric/fenv"> 浮点环境</a> <span class="t-mark-rev t-since-c99">(C99)</span><br />
+<a href="/w/c/numeric/random" title="c/numeric/random"> 伪随机数生成</a><br />
+<a href="/w/c/numeric/complex" title="c/numeric/complex"> 复数算术</a> <span class="t-mark-rev t-since-c99">(C99)</span><br />
+<a href="/w/c/numeric/tgmath" title="c/numeric/tgmath"> 泛型数学</a> <span class="t-mark-rev t-since-c99">(C99)</span>
+</p>
+</div>
+<p><b><a href="/w/c/chrono" title="c/chrono"> 日期和时间工具</a></b>
+</p><p><b><a href="/w/c/io" title="c/io"> 输入/输出支持</a></b>
+</p><p><b><a href="/w/c/locale" title="c/locale"> 本地化支持</a></b>
+</p><p><b><a href="/w/c/thread" title="c/thread"> 并发支持库</a></b> <span class="t-mark-rev t-since-c11">(C11)</span>
+</p>
+</td></tr>
+<tr class="row">
+<td colspan="3"><b><a href="/w/c/experimental" title="c/experimental"> 技术规范</a></b>
+<p>&#160;&#160;<b><a href="/w/c/experimental/dynamic" title="c/experimental/dynamic">动态内存扩展</a></b>&#160;&#160;<span class="t-mark-rev t-since-dynamic-tr t-mark-ts">(动态内存 TR)</span><br />
+&#160;&#160;<b><a href="/w/c/experimental/fpext1" title="c/experimental/fpext1">浮点扩展，部分 1</a></b>&#160;&#160;<span class="t-mark-rev t-since-fpext1-ts t-mark-ts">(FP 扩展1 TS)</span><br />
+&#160;&#160;<b><a href="/w/c/experimental/fpext4" title="c/experimental/fpext4">浮点扩展，部分 4</a></b>&#160;&#160;<span class="t-mark-rev t-since-fpext4-ts t-mark-ts">(FP 扩展4 TS)</span><br />
+</p>
+</td></tr>
+<tr class="row rowbottom">
+<td colspan="3"> <a href="/w/c/links" title="c/links">外部链接</a>&#160;&#160;−&#160;&#160;<a href="/w/c/links/libs" title="c/links/libs">非 ANSI/ISO 库</a>&#160;&#160;−&#160;&#160;<a href="/w/c/symbol_index" title="c/symbol index">索引</a>&#160;&#160;−&#160;&#160;<a href="/w/c/symbol_index" title="c/symbol index">符号索引</a>
+</td></tr>
+</table>
+<table class="mainpagetable" cellspacing="0" style="padding: 2em 2em; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;">
+
+<tr class="row rowtop rowbottom">
+<td> <span style="font-size: 1.5em;"><a href="/w/bilingual_glossary" title="bilingual glossary">双语术语表</a></span>
+</td></tr>
+<tr class="row rowtop">
+<td> <span style="font-size: 1.5em;">新闻</span>
+</td></tr>
+<tr class="row rowbottom">
+<td>
+<ul><li> 2019-06-07 ：<a href="/w/Cppreference:Archives" title="Cppreference:Archives">离线归档</a>的新版本
+</li></ul>
+<ul><li> 2018-10-28 ：<a href="/w/Cppreference:Archives" title="Cppreference:Archives">离线归档</a>的新版本
+</li></ul>
+<ul><li> 2018-03-11 ：<a href="/w/Cppreference:Archives" title="Cppreference:Archives">离线归档</a>的新版本
+</li></ul>
+<ul><li> 2017-12-20 ：<a href="/w/Cppreference:Archives" title="Cppreference:Archives">离线归档（中文）</a>的新版本。
+</li></ul>
+</td></tr>
+<tr class="row rowtop rowbottom">
+<td> <a rel="nofollow" class="external text" href="http://www.cppreference.com/support/">支持我们</a>&#160;&#160;−&#160;&#160;<a href="/w/Cppreference:FAQ" title="Cppreference:FAQ">FAQ</a>
+</td></tr></table></div>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 1918/1000000
+Preprocessor generated node count: 1829/1000000
+Post‐expand include size: 27292/2097152 bytes
+Template argument size: 7183/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:913-0!*!0!*!*!2!zh-cn!* and timestamp 20220717142407 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    来自“<a href="https://zh.cppreference.com/mwiki/index.php?title=首页&amp;oldid=74449">https://zh.cppreference.com/mwiki/index.php?title=首页&amp;oldid=74449</a>”                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer" lang="zh-CN" dir="ltr">
+                        <div id="cpp-navigation">
+            <h5>导航</h5>
+            <ul>
+<li id="n-mainpage-description"><a href="/w/%E9%A6%96%E9%A1%B5" title="访问首页 [z]" accesskey="z">首页</a></li><li id="n-portal"><a href="/w/Cppreference:%E7%A4%BE%E5%8C%BA%E4%B8%BB%E9%A1%B5" title="关于本项目，你可以做什么，在哪里找到你需要的事物">社区专页</a></li><li id="n-currentevents"><a href="/w/Cppreference:%E6%96%B0%E9%97%BB%E5%8A%A8%E6%80%81" title="查看当前事件的背景信息">新闻动态</a></li><li id="n-recentchanges"><a href="/w/Special:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9" title="本wiki的最近更改列表 [r]" accesskey="r">最近更改</a></li><li id="n-randompage"><a href="/w/Special:%E9%9A%8F%E6%9C%BA%E9%A1%B5%E9%9D%A2" title="载入一个随机页面 [x]" accesskey="x">随机页面</a></li><li id="n-help"><a href="/w/Help:%E7%9B%AE%E5%BD%95" title="查找帮助的地方">帮助</a></li>            </ul>
+        </div>
+                        <div id="cpp-toolbox">
+            <h5><span>工具箱</span><a href="#"></a></h5>
+            <ul>
+<li id="t-whatlinkshere"><a href="/w/Special:%E9%93%BE%E5%85%A5%E9%A1%B5%E9%9D%A2/%E9%A6%96%E9%A1%B5" title="所有链入本页的wiki页面列表 [j]" accesskey="j">链入页面</a></li><li id="t-recentchangeslinked"><a href="/w/Special:%E9%93%BE%E5%87%BA%E6%9B%B4%E6%94%B9/%E9%A6%96%E9%A1%B5" title="本页链入的页面的最近更改 [k]" accesskey="k">相关更改</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="上传文件 [u]" accesskey="u">上传文件</a></li><li id="t-specialpages"><a href="/w/Special:%E7%89%B9%E6%AE%8A%E9%A1%B5%E9%9D%A2" title="所有特殊页面的列表 [q]" accesskey="q">特殊页面</a></li><li id="t-print"><a href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;printable=yes" rel="alternate" title="本页面的可打印版本 [p]" accesskey="p">打印版本</a></li><li id="t-permalink"><a href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;oldid=74449" title="本页面该版本的永久链接">永久链接</a></li><li id="t-info"><a href="/mwiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;action=info">页面信息</a></li>            </ul>
+        </div>
+                        <div id="cpp-languages">
+            <div><ul><li>其他语言</li></ul></div>
+            <div><ul>
+<li class="interwiki-ar"><a href="http://ar.cppreference.com/w/" title="" lang="ar" hreflang="ar">العربية</a></li><li class="interwiki-cs"><a href="http://cs.cppreference.com/w/" title="" lang="cs" hreflang="cs">Česky</a></li><li class="interwiki-de"><a href="http://de.cppreference.com/w/" title="" lang="de" hreflang="de">Deutsch</a></li><li class="interwiki-en"><a href="http://en.cppreference.com/w/" title="" lang="en" hreflang="en">English</a></li><li class="interwiki-es"><a href="http://es.cppreference.com/w/" title="" lang="es" hreflang="es">Español</a></li><li class="interwiki-fr"><a href="http://fr.cppreference.com/w/" title="" lang="fr" hreflang="fr">Français</a></li><li class="interwiki-it"><a href="http://it.cppreference.com/w/" title="" lang="it" hreflang="it">Italiano</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/" title="" lang="ja" hreflang="ja">日本語</a></li><li class="interwiki-ko"><a href="http://ko.cppreference.com/w/" title="" lang="ko" hreflang="ko">한국어</a></li><li class="interwiki-pl"><a href="http://pl.cppreference.com/w/" title="" lang="pl" hreflang="pl">Polski</a></li><li class="interwiki-pt"><a href="http://pt.cppreference.com/w/" title="" lang="pt" hreflang="pt">Português</a></li><li class="interwiki-ru"><a href="http://ru.cppreference.com/w/" title="" lang="ru" hreflang="ru">Русский</a></li><li class="interwiki-tr"><a href="http://tr.cppreference.com/w/" title="" lang="tr" hreflang="tr">Türkçe</a></li>            </ul></div>
+        </div>
+            <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> 本页面最后修改于2022年7月3日 (星期日) 01:41。</li>
+                                    <li id="footer-info-viewcount">此页面已被浏览过3,137,148次。</li>
+                            </ul>
+                    <ul id="footer-places">
+                                    <li id="footer-places-privacy"><a href="/w/Cppreference:%E9%9A%90%E7%A7%81%E6%9D%83%E6%94%BF%E7%AD%96" title="Cppreference:隐私权政策">隐私政策</a></li>
+                                    <li id="footer-places-about"><a href="/w/Cppreference:%E5%85%B3%E4%BA%8E" title="Cppreference:关于">关于cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="/w/Cppreference:%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E" title="Cppreference:免责声明">免责声明</a></li>
+                            </ul>
+                                    <ul id="footer-icons" class="noprint">
+                                    <li id="footer-poweredbyico">
+                                            <a href="//www.mediawiki.org/"><img src="/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="//upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="//upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
+                                </ul>
+                        <div style="clear:both">
+            </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="https://zh.cppreference.com/mwiki/load.php?debug=false&amp;lang=zh-cn&amp;modules=skins.cppreference2&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.MathJax","ext.gadget.ColiruCompiler"], null, true);
+}</script>
+<script src="https://zh.cppreference.com/mwiki/load.php?debug=false&amp;lang=zh-cn&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2828341-1']);
+_gaq.push(['_setDomainName', 'cppreference.com']);
+_gaq.push(['_trackPageview']);
+</script><!-- Served in 0.034 secs. -->
+	</body>
+</html>
