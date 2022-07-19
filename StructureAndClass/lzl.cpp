@@ -11,11 +11,11 @@ struct  Test{
     int tableware=3;
     int price=19;
     int table=5;
-    cm="鸡肉";
+    cm="????";
    }
 
    void show(){
-    cout<<"餐具：="<<tableware<<"\t价格：="<<price<<"\t椅子：="<<chair<<"\t桌子:="<<table<<"\t菜名：="<<cm<<"\n";
+    cout<<"????="<<tableware<<"\t???="<<price<<"\t?????="<<chair<<"\t????:="<<table<<"\t??????="<<cm<<"\n";
    }
 
 }test;
