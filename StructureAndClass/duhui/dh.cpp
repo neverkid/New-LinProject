@@ -2,10 +2,12 @@
 #include <string>
 using namespace std;
 
-class Test
+class mian_bao_fang
 {
 private:
+    //面包房名称
     string name;
+    //面包种类
     int kind;
     string site;
     double price;
@@ -16,7 +18,6 @@ public:
     //构造函数
     Test();
     void showInfomation();
-    //析构函数
     void setName(string n);
     string getName();
 protected:
