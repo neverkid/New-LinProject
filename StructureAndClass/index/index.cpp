@@ -75,6 +75,7 @@ int main()
     return 0;
 }
 /*
+无参构造函数，暂时不用。
 Person::Person()
 {
     name = "??";
