@@ -1,85 +1,10 @@
-// ???????
-#include <iostream>
-#include <string>
-using namespace std;
-
-typedef class DATE
-{
-    int year;
-    int mouth;
-    int day;
-
-public:
-    DATE(int y, int m, int d)
-    {
-        year = y;
-        mouth = m;
-        day = d;
-    }
-    DATE()
-    {
-        year = 0;
-        mouth = 0;
-        day = 0;
-    }
-    int getYear();
-    int getMouth();
-    int getDay();
-} date;
-
-typedef class Person
-{
-private:
-    string name;
-    int age;
-    double height;
-    double weight;
-    string id;
-
-public:
-    //??????
-    Person();
-    void showInfomation();
-    //????????
-    void setName(string n);
-    string getName();
-    int getAge();
-    double getHeight();
-    double getWeight();
-    ~Person();
-    //????????锟斤拷?锟斤拷????锟斤拷????????
-protected:
-    void setId(string i);
-    string getId();
-} person;
-
-/*
-1??typedef??C++????????????????????????????????????
-*/
-typedef class Student : Person
-{
-    string schoolName;
-    date graduationDate;
-
-public:
-    Student();
-    date getGraduationDate();
-    string getSchoolName();
-    void showInfomation();
-} stu;
-
-int main()
-{
-    stu lzl;
-    lzl.showInfomation();
-    return 0;
-}
+#include"index.hpp"
 /*
 无参构造函数，暂时不用。
 Person::Person()
 {
-    name = "??";
-    int age = 18;
+    name = "张三";
+    age = 18;
     height = 1.75;
     weight = 62.7;
 }
@@ -101,9 +26,9 @@ Person::Person(string n,double h,double l,int a)
 
 void Person::showInfomation()
 {
-    cout << "???" << name << "\t???" << age << "\t???" << height << "\t???" << weight << "\n";
+    cout << "姓名：" << name << "\t年龄：" << age << "\t身高：" << height << "\t体重：" << weight << "\n";
 }
-//????????
+//析构函数
 void Person::setName(string n)
 {
     name = n;
@@ -126,15 +51,15 @@ double Person::getWeight()
 }
 Person::~Person()
 {
-   cout << "??????\n";
+    cout << "对象已销毁！\n";
 }
-// this???????????
+// this指针：用来指代当前对象
 /*
-???????.?
-???????->?
-????????
-    ??????*?*?????
-    ??????&?&??????
+实例化对象：“.”
+实例化指针：“->”
+指针与对象转化：
+    指针转对象：*，*取值运算符
+    对象转指针：&，&取地址运算符
 */
 void Person::setId(string ids)
 {
@@ -159,14 +84,14 @@ Student::Student()
     this->setId("0x6fcc0200");
     this->setName("xiaodu");
     this->graduationDate = date(2020, 7, 1);
-    this->schoolName = "????";
+    this->schoolName = "实验中学";
 }
 
 void Student::showInfomation()
 {
-    cout << "???" << this->getName() << "\t???" << this->getAge() << "\t???" << this->getHeight() << "\t???" << this->getWeight() << "\n";
-    cout<<"???"<<this->getId()<<"?????"<<this->getGraduationDate().getYear()<<"?"<<this->getGraduationDate().getMouth();
-    cout<<"?"<<this->getGraduationDate().getDay()<<"?\n";
+    cout << "姓名：" << this->getName() << "\t年龄：" << this->getAge() << "\t身高：" << this->getHeight() << "\t体重：" << this->getWeight() << "\n";
+    cout<<"学号："<<this->getId()<<"毕业时间："<<this->getGraduationDate().getYear()<<"年"<<this->getGraduationDate().getMouth();
+    cout<<"月"<<this->getGraduationDate().getDay()<<"日\n";
 }
 
 int date::getDay(){
