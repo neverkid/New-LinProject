@@ -1,4 +1,4 @@
-#include "matrix.h"
+#include "matrix.hpp"
 
 int main(){
     int **mat = arrayList<int>(4,4);
