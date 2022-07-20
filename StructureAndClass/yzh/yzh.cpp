@@ -24,17 +24,17 @@ parkinglot::parkinglot()
 
 void parkinglot::ashowInfomation()
 {
-    cout << "停车场名为：" << name << "\t出口数为：" << outlet << "\t?入口数为：" << inlet << "\t总停车位为："<< space << "\t白天时段收费（元）/每小时为：" << mtoll <<  "\t夜间时段收费（）元/每小时为：" << ntoll <<"\n";
+    cout << "停车场名为：" << name << "\t出口数为：" << outlet << "\t入口数为：" << inlet << "\t总停车位为："<< space << "\t白天时段收费（元）/每小时为：" << mtoll <<  "\t夜间时段收费（）元/每小时为：" << ntoll <<"\n";
 }
 
 void parkinglot::bshowInfomation()
 {
-    cout << "停车场名为：" << bname << "\t出口数为：" << boutlet << "\t?入口数为：" << binlet << "\t总停车位为："<< bspace << "\t白天时段收费（元）/每小时为：" << bmtoll <<  "\t夜间时段收费（）元/每小时为：" << bntoll <<"\n";
+    cout << "停车场名为：" << bname << "\t出口数为：" << boutlet << "\t入口数为：" << binlet << "\t总停车位为："<< bspace << "\t白天时段收费（元）/每小时为：" << bmtoll <<  "\t夜间时段收费（）元/每小时为：" << bntoll <<"\n";
 }
 
 void parkinglot::cshowInfomation()
 {
-    cout << "停车场名为：" << cname << "\t出口数为：" << coutlet << "\t?入口数为：" << cinlet << "\t总停车位为："<< cspace << "\t白天时段收费（元）/每小时为：" << cmtoll <<  "\t夜间时段收费（）元/每小时为：" << cntoll <<"\n";
+    cout << "停车场名为：" << cname << "\t出口数为：" << coutlet << "\t入口数为：" << cinlet << "\t总停车位为："<< cspace << "\t白天时段收费（元）/每小时为：" << cmtoll <<  "\t夜间时段收费（）元/每小时为：" << cntoll <<"\n";
 }
 
 void parkinglot::setName(string n)
