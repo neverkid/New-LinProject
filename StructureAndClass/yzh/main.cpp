@@ -2,8 +2,8 @@
 
 int main(){
     pl parkinglot;
-    parkinglot.showInfomation();
-    parkinglot.showInfomation();
-    parkinglot.showInfomation();
-    return 0;
+    parkinglot.ashowInfomation();
+    parkinglot.bshowInfomation();
+    parkinglot.cshowInfomation(); 
+    return 0; 
 }
