@@ -146,7 +146,7 @@ vector<us> readbuffer::getData()
     fin >> inputBuffer;
 
     int y, m, d, num;
-    char s1, p;
+    char p;
     while (fin >> inputBuffer)
     {
         us temp_u;
@@ -188,7 +188,7 @@ vector<us> readbuffer::getData()
         }
         Date dd(y, m, d);
         temp_u.setDate(dd);
-        switch (s1)
+        switch (p)
         {
         case 'F':
             temp_u.setSex(false);
@@ -281,65 +281,35 @@ string __table::tostring()
 
 void tableInit(vector<tb> &b)
 {
-    rbf temp_r;
-    tb temp_b;
     b.clear();
-    vector<us> temp_v = temp_r.getData();
-    int man = 0, wman = 0, all = 0, subm = 0;
-    for (auto i = temp_v.begin(); i != temp_v.end(); i++)
+    vector<us> v = readbuffer().getData();
+    int man = 0, woman = 0, syear = 1960;
+    for (auto i = v.begin(); i != v.end(); i++)
     {
-        if (i == temp_v.begin())
+        if ((i->getDate().getYear() / 10 * 10) != syear)
         {
-            temp_b.setYears((i->getDate().getYear() / 10) * 10);
-            all += i->getBirth();
-            if (i->getSex())
-            {
-                man += i->getBirth();
-            }
-            else
-            {
-                wman += i->getBirth();
-            }
+            b.push_back(__table(syear, man, woman, woman + man, woman - man));
+            man = 0;
+            woman = 0;
+            syear += 10;
         }
-        else
+        if ((i->getDate().getYear() / 10 * 10) == syear)
         {
-            if (temp_b.getYears() / 10 == i->getDate().getYear() / 10)
-            {
-                all += i->getBirth();
-                if (i->getSex())
-                {
-                    man += i->getBirth();
-                }
-                else
-                {
-                    wman += i->getBirth();
-                }
-            }
-            else
-            {
-                subm = wman - man;
-                temp_b.setSubtractNumber(subm);
-                temp_b.setManNumber(man);
-                temp_b.setWomanNumber(wman);
-                temp_b.setTotalNumber(all);
-                b.push_back(temp_b);
-                temp_b.setYears((i->getDate().getYear() / 10) * 10);
-                all = 0;
-                man = 0;
-                wman = 0;
-                subm = 0;
-                all += i->getBirth();
-                if (i->getSex())
-                {
-                    man += i->getBirth();
-                }
-                else
-                {
-                    wman += i->getBirth();
-                }
-            }
+            i->getSex() ? (man += i->getBirth()) : (woman += i->getBirth());
         }
     }
+    b.push_back(__table(syear, man, woman, woman + man, woman - man));
+    man = 0;
+    woman = 0;
+    int total = 0, sub = 0;
+    for (auto i = b.begin(); i != b.end(); i++)
+    {
+        man+=i->getManNumber();
+        woman+=i->getWomanNumber();
+        total+=i->getTotalNumber();
+        sub+=i->getSubtractNumber();
+    }
+    b.push_back(__table(-1,man,woman,total,sub));
 }
 #endif
 
@@ -347,9 +317,9 @@ int main()
 {
     vector<tb> vt;
     tableInit(vt);
-    cout << vt.size();
+    cout << vt.size() << "\n";
     for (auto i = vt.begin(); i != vt.end(); i++)
     {
-        cout<<i->tostring()<<endl;
+        cout << i->tostring() << endl;
     }
 }
