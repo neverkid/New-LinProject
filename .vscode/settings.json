@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "C_Cpp_Runner.cCompilerPath": "E:/Migw32/MinGW64/bin/gcc.exe",
   "C_Cpp_Runner.cppCompilerPath": "g++",
   "C_Cpp_Runner.debuggerPath": "gdb",
@@ -76,4 +77,30 @@
     "vector": "cpp",
     "iomanip": "cpp"
   }
+=======
+    "files.associations": {
+        "iostream": "cpp",
+        "string": "cpp",
+        "atomic": "cpp",
+        "exception": "cpp",
+        "fstream": "cpp",
+        "istream": "cpp",
+        "iterator": "cpp",
+        "memory": "cpp",
+        "ostream": "cpp",
+        "streambuf": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp",
+        "vector": "cpp",
+        "xlocale": "cpp",
+        "xlocinfo": "cpp",
+        "xmemory": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp",
+        "cstdio": "cpp",
+        "cstddef": "cpp",
+        "cstring": "cpp"
+    }
+>>>>>>> cb01b4a4484214b5f59852e94230e8430fe6d460
 }
