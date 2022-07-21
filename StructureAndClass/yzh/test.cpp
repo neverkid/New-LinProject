@@ -31,14 +31,14 @@ int main()
         arrays.clear();
 
         counter++;
-        if (counter > 5000)
+        if (counter > 100000)
         {
             break;
         }
     }
 
 
- for (int i=0; i<4030; i++)
+ for (int i=0; i<50000; i++)
  {
     for(int j=0;j< 5;j++)
     {
@@ -49,7 +49,7 @@ int main()
 
 oFile.open("biaoge.csv", ios::out | ios::trunc);
  
- for (int j=0; j<4030; j++)
+ for (int j=0; j<50000; j++)
 {
     oFile <<all_array[j][0] << "," << all_array[j][1] << "," << all_array[j][2] <<"," << all_array[j][3] <<"," << all_array[j][4]
     << endl;
