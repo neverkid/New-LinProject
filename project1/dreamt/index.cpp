@@ -312,14 +312,3 @@ void tableInit(vector<tb> &b)
     b.push_back(__table(-1, man, woman, total, sub));
 }
 #endif
-
-int main()
-{
-    vector<tb> vt;
-    tableInit(vt);
-    cout << vt.size() << "\n";
-    for (auto i = vt.begin(); i != vt.end(); i++)
-    {
-        cout << i->tostring() << endl;
-    }
-}
