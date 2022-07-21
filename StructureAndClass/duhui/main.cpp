@@ -4,7 +4,7 @@ int main()
 {  
     mbf mianbaofang;
     mianbaofang.showInfomation();
-    mianbaofang.setName("Ãæ°ü·¿");
+    mianbaofang.setName("?");
     mianbaofang.showInfomation();
     return 0;
 }

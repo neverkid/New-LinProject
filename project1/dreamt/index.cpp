@@ -304,12 +304,12 @@ void tableInit(vector<tb> &b)
     int total = 0, sub = 0;
     for (auto i = b.begin(); i != b.end(); i++)
     {
-        man+=i->getManNumber();
-        woman+=i->getWomanNumber();
-        total+=i->getTotalNumber();
-        sub+=i->getSubtractNumber();
+        man += i->getManNumber();
+        woman += i->getWomanNumber();
+        total += i->getTotalNumber();
+        sub += i->getSubtractNumber();
     }
-    b.push_back(__table(-1,man,woman,total,sub));
+    b.push_back(__table(-1, man, woman, total, sub));
 }
 #endif
 
