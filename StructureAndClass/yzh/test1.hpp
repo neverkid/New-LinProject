@@ -1,5 +1,5 @@
-#ifndef _TEST_HPP_
-#define _TEST_HPP_
+#ifndef _INDEX_HPP_
+#define _INDEX_HPP_
 
 #include <iostream>
 #include <cstdio>
